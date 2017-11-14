@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+  <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:alpha="0.3"
+    android:scaleType="centerCrop"
+    android:src="@drawable/warehouse"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+      android:layout_width="40dp"
+      android:layout_height="40dp"/>
+
+    <LinearLayout
+      android:layout_marginLeft="70dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+
+      <Button
+        android:id="@+id/add_tnt_to_container"
+        style="@style/button"
+        android:drawableRight="@drawable/tnt"
+        android:text="Add tnt to container"/>
+
+      <Button
+        android:id="@+id/add_ammonia_to_container"
+        style="@style/button"
+        android:drawableRight="@drawable/ammonia"
+        android:text="Add ammonia to container"/>
+
+      <Button
+        android:id="@+id/add_sand_to_container"
+        style="@style/button"
+        android:drawableRight="@drawable/sand"
+        android:text="Add sand to container"/>
+
+      <Button
+        android:id="@+id/build_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Get warehouse summary"/>
+    </LinearLayout>
+
+    <TextView
+      android:id="@+id/reports"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginTop="40dp"
+      android:layout_weight="1"
+      android:paddingLeft="105dp"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      tools:text="Containers: 2 \n\nArmored: 1\nVentilated: 0\nInert: 0"/>
+  </LinearLayout>
+
+</FrameLayout>
